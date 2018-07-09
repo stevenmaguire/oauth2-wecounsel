@@ -1,0 +1,52 @@
+{
+  "data": {
+    "id": "12345",
+    "type": "user",
+    "attributes": {
+      "first_name": "WeCounsel",
+      "last_name": "Admin",
+      "email": "admin@domain.com",
+      "avatar_thumb_url": "\/assets\/fallback\/default_user_thumb.jpg",
+      "user_type": "organization_admin",
+      "gender": null,
+      "time_zone": "Central Time (US & Canada)"
+    },
+    "relationships": {
+      "organizations": {
+        "data": [
+          {
+            "id": "123",
+            "type": "organization"
+          }
+        ]
+      }
+    },
+    "links": {
+      "self": "https:\/\/staging.wecounsel.com\/v1\/users\/12345"
+    }
+  },
+  "included": [
+    {
+      "id": "123",
+      "type": "organization",
+      "attributes": {
+        "value": "wecounsel",
+        "display": "WeCounsel",
+        "active?": true
+      },
+      "links": {
+        "self": "https:\/\/staging.wecounsel.com\/v1\/organizations\/123"
+      }
+    }
+  ],
+  "meta": {
+    "current_user_abilities": {
+      "provider": false,
+      "consumer": false,
+      "facilitator": true,
+      "org_admin": true,
+      "admin": false,
+      "guest": false
+    }
+  }
+}
