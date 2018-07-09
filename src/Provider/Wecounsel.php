@@ -28,7 +28,7 @@ class Wecounsel extends AbstractProvider
      * @param  string $url
      * @param  AccessToken|string $token
      * @param  array $options Any of "headers", "body", and "protocolVersion".
-     * @return RequestInterface
+     * @return \Psr\Http\Message\RequestInterface
      */
     public function getAuthenticatedRequest($method, $url, $token, array $options = [])
     {
@@ -126,7 +126,7 @@ s     */
      *
      * @param object $response
      * @param AccessToken $token
-     * @return League\OAuth2\Client\Provider\ResourceOwnerInterface
+     * @return WecounselResourceOwner
      */
     protected function createResourceOwner(array $response, AccessToken $token)
     {
