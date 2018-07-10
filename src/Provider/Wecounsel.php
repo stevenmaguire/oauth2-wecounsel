@@ -51,7 +51,7 @@ class Wecounsel extends AbstractProvider
      * Get access token url to retrieve token
      *
      * @return string
-s     */
+     */
     public function getBaseAccessTokenUrl(array $params)
     {
         return $this->getHost() . '/oauth/token';
